@@ -9,6 +9,9 @@ function NoteItem({title, body, createdAt}) {
     
     return (
         <div className="note-item">
+            <div className="note-item__delete">
+                <a className="note-item__delete">X</a>
+            </div>
             <h3 className="note-item__title">{title}</h3>
             <h6 className="note-item__created-at">{showFormattedDate(createdAt)}</h6>
             <p className="note-item__body">{body}</p>

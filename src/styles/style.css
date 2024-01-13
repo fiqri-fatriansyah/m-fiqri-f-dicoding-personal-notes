@@ -30,7 +30,7 @@ img {
 }
 
 .note-app h2 {
-    margin: 32px 0;
+    margin: 10px 0 32px 0;
     text-align: center;
     font-weight: bold;
     font-size: 32px;
@@ -39,12 +39,12 @@ img {
 
 .note-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em 1em;
 }
 
 .note-item {
     align-items: center;
-    margin: 8px 8px;
     min-width: 160px;
     max-width: 480px;
     padding: 16px;
@@ -70,4 +70,61 @@ img {
     margin: 8px;
     font-size: medium;
     color:rgb(255, 255, 255)
+}
+
+.note-form {
+    margin: 0 auto 32px auto;
+    padding: 2%;
+    border: 1px dashed;
+    border-radius: 8px;
+    min-width: 160px;
+    max-width: 600px;
+}
+
+.note-form__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0 0;
+}
+
+.note-form__label {
+    margin-left: 25%;
+    font-family: 'Inter', sans-serif;
+    font-size: large;
+    font-size: 18px;
+}
+
+.note-form__input {
+    width: 100%;
+    padding: 8px 0;
+    margin: 0 0 0 25%;
+    font-family: 'Inter', sans-serif;
+}
+
+.note-form__button {
+    justify-items: right;
+    align-items: end;
+    text-align: center;
+    margin: 3% 25% 0 0;
+    margin-left: auto;
+    margin-right: 25%;
+    width: 100px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    padding: 2% 2%;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    background-color: rgb(157, 195, 249);
+}
+
+.note-item__delete {
+    text-align: right;
+    margin: 0 1% 0 0;
+    padding: 1%;
+    font-size: 18px;
+    color: orangered;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
 }
